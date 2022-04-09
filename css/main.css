@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    color: red;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: minmax(auto,150px) 60px minmax(253px,auto) minmax(150px,auto);
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f" ;
+}
+/* deze div is voor view only, en moet verwijderd worden */
+/* div{
+    border: 1px solid black;
+} */
+#header{
+    grid-area: h;
+}
+#footer{
+    grid-area: f;
+}
+#navigatie{
+    grid-area: m;
+}
+#content{
+    grid-area: c;
+}
+h1, h2, h3{
+    color: red;
+    text-shadow: 1px 1px black;
+}
