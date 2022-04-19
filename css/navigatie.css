@@ -1,5 +1,7 @@
-@media screen and (max-width:400px) {
-    .navi-lijst{
+a:visited{
+    color: red;
+}
+.navi-lijst{
         list-style-type: none;
         display: inline-block;
         font-size: 1em;
@@ -25,8 +27,8 @@
         transition:ease-in-out 0.5s;
         border-radius: 15px;
     }
-}
-@media screen and (min-width:401px) {
+
+@media screen and (min-width:701px) {
 .desktop-view{
     padding: 0;
     margin: 0;
@@ -37,7 +39,7 @@
 .navi-lijst{
     list-style-type: none;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin: 0;
     padding: 10px;
 }
