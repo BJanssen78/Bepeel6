@@ -14,10 +14,33 @@
 }
 
 .ik{
-    /* max-width: 200px; */
-    border-radius: 25px;
+    border-radius: 50%;
     padding: 10px;
     margin: 0 auto;
-    justify-items: center;
-    justify-content: center;
+}
+@media screen and (min-width:401px) {
+    #content{
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+    .ik{
+        margin: auto 0;
+        word-wrap: normal;
+        flex-wrap: wrap;
+    }
+    .me h3{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .about-me-title{
+        width: 100%;
+        justify-items: stretch;
+
+    }
+    .inner-me{
+        width: 100%;
+        padding: 25px;
+    }
 }
