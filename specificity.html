@@ -15,7 +15,7 @@
         <!-- end site css link section-->
 
         <!-- start page css link section-->
-        <link rel="stylesheet" href="css/assignments.css"/>
+        <link rel="stylesheet" href="css/specificity.css"/>
         <!-- end page css link section-->
     </head>
 
@@ -44,27 +44,24 @@
         <!-- einde navigatie -->
 
         <div id="content">
-            <h2>Assignments</h2>
-            <p>
-                Elke knop is een aparte assignment.<br>
-                Elke assignment word op de betreffende pagina verder uitgelicht
-            </p>
-            <div class="menu">
-                <div class="menu-item">
-                    <a class="menu-link" href="html-css-refresher.html">HTML/CSS Refresher</a>
-                </div>
-                <div class="menu-item">
-                    <a class="menu-link" href="specificity.html">specificity/selectors</a>
-                </div>
-                <div class="menu-item">
-                    <a class="menu-link" href="#">3</a>
-                </div>
-                <div class="menu-item">
-                    <a class="menu-link" href="#">4</a>
-                </div>
-                <div class="menu-item">
-                    <a class="menu-link" href="#">5</a>
-                </div>
+            <div class="inner-content">
+                <h2>Specificity :</h2>
+                <p>
+                    Met specificity word bedoeld hoe specifiek je een bepaald element aanroept.<br>
+                    Meestal word dit gedaan met <span class="tag">class</span>, maar soms ook via het <span class="tag">id</span> van een element.<br>
+                    Hoe gerichter er naar een element word verwezen, des te unieker een opmaak kan worden toegepast.
+                </p>
+            </div>
+
+            <div class="inner-content">
+                <h2>Selectors :</h2>
+                <p>
+                   Met selectors kan er een specifieke opmaak aan een element worden gegeven.<br>
+                   Het kan soms wenselijk zijn om specifieke elementen over te slaan en de onderliggende elementen te targeten.<br>
+                   Of zelfs een onderliggend element overslaan en vervolgens door te gaan met het element die erna volgt.<br>
+                   Een voorbeeld hiervan is :<br>
+                   <span class="tag">div p</span> dit zal alle onderliggende <span class="tag">p</span> elementen opmaken, maar niet de <span class="tag">div</span> zelf.
+                </p>
             </div>
         </div>
 

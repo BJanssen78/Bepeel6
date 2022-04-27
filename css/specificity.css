@@ -1,0 +1,15 @@
+#content{
+    color: black;
+}
+.tag{
+    background-color: rgba(211, 211, 211, 0.925);
+    color: red;
+}
+.inner-content{
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(87, 87, 87, 0.212);
+}
