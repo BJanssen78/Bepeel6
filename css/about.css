@@ -18,6 +18,11 @@
     padding: 10px;
     margin: 0 auto;
 }
+.paintball-film{
+    margin: 10px auto;
+    max-width: 560px;
+    max-height: 315px;
+}
 @media screen and (min-width:401px) {
     #content{
         display:flex;
@@ -42,5 +47,9 @@
     .inner-me{
         width: 100%;
         padding: 25px;
+    }
+    .paintball-film{
+        width: 1024px;
+        height: 500px;
     }
 }
