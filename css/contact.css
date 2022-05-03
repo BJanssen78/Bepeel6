@@ -1,0 +1,44 @@
+.div-contact-form{
+    width: 600px;
+    margin: auto;
+}
+.formulier{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    /* background-color: yellow; */
+    width: 600px;
+    margin:  auto;
+    align-content: center;
+}
+input, select, textarea{
+    width: 200px;
+    margin-bottom: 10px;
+}
+#butttons{
+    display:inline-block;
+}
+textarea{
+    height: 200px;
+    width: 300px;
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus{
+    border: 2px dotted black;
+    outline: none;
+}
+input[type=text]:valid, input[type=email]:valid{
+    border: 2px solid lime;
+    /* border: none; */
+}
+input[type=text]:valid::after, input[type=email]:valid::after{
+    content: 'Wel done';
+    border: 2px solid lime;
+}
+.form-button{
+    box-shadow: 2px 2px 0.5px black;
+    margin: 10px;
+    display: inline;
+    max-width: 100px;
+}

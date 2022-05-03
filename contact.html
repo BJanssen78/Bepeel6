@@ -15,7 +15,7 @@
         <!-- end site css link section-->
 
         <!-- start page css link section-->
-        <link rel="stylesheet" href="css/specificity.css"/>
+        <link rel="stylesheet" href="css/contact.css"/>
         <!-- end page css link section-->
     </head>
 
@@ -44,23 +44,35 @@
         <!-- einde navigatie -->
 
         <div id="content">
-            <div class="inner-content">
-                <h2>Pseudo classes :</h2>
-                <p>
-                    Pseudo classes geven een extra waarde aan de classe.<br>
-                    Er zal eerst iets moeten gebeuren, voordat deze pseudo's wat gaan doen.<br>
-                    Denk hierbij aan <span class="tag">:hover</span> of <span class="tag">:visited</span> deze 2 zie je vooral bij hyperlinks
-                </p>
-            </div>
+            <div id="div-contact-form" class="formulier">
+                <form class="formulier" name="contact-form" method="post" enctype="multipart/form-data" data-netlify="true" data-netlify-recaptcha="true" id="contact-form">
+                    
+                    <label for="form-naam">Naam :</label>
+                    <input type="text" id="form-naam" value="" required/>
 
-            <div class="inner-content">
-                <h2>Pseudo elements :</h2>
-                <p>
-                   Een pseudo element voert gelijk de extra waarde uit.<br>
-                   Denk hierbij aan <span class="tag">::before</span>, dit element injecteert gelijk vooraf een bepaald element.<br>
-                   Bij een pseudo element gaat een <span class="tag">::</span> aan vooraf, samen met een css classe.
-                </p>
+                    <label for="form-email">Email adres :</label>
+                    <input type="email" id="form-email" value="" required/>
+
+                    <label for="form-subject">Subject :</label>
+                    <select name="subject" id="form-subject" required>
+                        <option selected disabled>Maak uw keuze</option>
+                        <option>Verbetering</option>
+                        <option>wijziging</option>
+                        <option>fun</option>
+                    </select>
+
+                    <label for="form-bericht">Uw bericht :</label>
+                    <textarea name="bericht" wrap="hard" id="form-bericht"></textarea>
+
+                    <div class="netlify-captcha" data-netlify-recaptcha="true"></div>
+
+                    <div id="buttons">
+                        <input class="form-button" type="reset" value="Reset"/>
+                        <input class="form-button" type="submit"/>
+                    </div>
+                </form>
             </div>
+            
         </div>
 
         <div id="footer">
