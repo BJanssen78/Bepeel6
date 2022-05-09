@@ -22,6 +22,8 @@
     color: white;
     padding: 20px 10px;
     text-shadow: none;
+    overflow: hidden;
+    word-wrap:break-word;
 }
 .h1-pseudo::before,.h1-pseudo::after{
     content: ' ';
