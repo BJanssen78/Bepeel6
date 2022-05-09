@@ -13,3 +13,32 @@
     padding: 10px;
     background-color: rgba(87, 87, 87, 0.212);
 }
+.h1-pseudo{
+    background-color: black;
+    text-transform: uppercase;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 20px 10px;
+    text-shadow: none;
+}
+.h1-pseudo::before,.h1-pseudo::after{
+    content: ' ';
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display:inline-block;
+}
+.h1-pseudo::before{
+    border-left: 20px solid #4a90e2;
+}
+.h1-pseudo::after{
+    border-right: 20px solid #4a90e2;
+}
+.highlight{
+    background-color: rgba(51, 41, 65, 0.226);
+    border-radius: 20px;
+    padding: 0 5px;
+}
