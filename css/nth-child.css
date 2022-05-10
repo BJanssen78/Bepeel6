@@ -1,0 +1,29 @@
+#content{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+#content ul, ol{
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(128, 128, 128, 0.623);
+    padding: 0;
+    line-height: 2;
+}
+.one ul li:nth-child(1),.one ol li:nth-child(1){
+    background-color: rgba(90, 106, 253, 0.836);
+    font-weight: bold;
+}
+.two ol li:nth-child(3){
+    background-color: rgba(90, 106, 253, 0.836);
+    font-weight: bold;
+}
+.three ul li:nth-child(4){
+    background-color: rgba(90, 106, 253, 0.836);
+    font-weight: bold;
+}
+.three ol{
+    background-color: rgba(90, 106, 253, 0.836);
+    font-weight: bold;
+}
