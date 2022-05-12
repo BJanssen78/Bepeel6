@@ -1,0 +1,30 @@
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+h2{
+    padding: 15px;
+    margin: 0 auto;
+}
+.div-p{
+    background-color: rgba(117, 117, 117, 0.178);
+    margin: 10px auto;
+    max-width: 1024px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+}
+.ani-box{
+    width: 10em;
+    height: 10em;
+    background-color: red;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    transition: 1000ms background-color ease-in, 1000ms border-radius;
+}
+.ani-box:hover{
+    background-color: yellow;
+    transform: rotate(360deg);
+    border-radius: 50%;
+}

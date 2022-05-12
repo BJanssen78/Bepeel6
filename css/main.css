@@ -34,3 +34,14 @@ h1, h2, h3{
     text-shadow: 1px 1px black;
     margin: auto;
 }
+.tag{
+    background-color: rgba(211, 211, 211, 0.925);
+    color: red;
+}
+.tag2{
+    background-color: rgba(145, 147, 241, 0.959);
+    color: red;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 01px 5px;
+}
