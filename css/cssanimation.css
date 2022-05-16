@@ -21,10 +21,29 @@ h2{
     background-color: red;
     margin: 10px auto;
     margin-bottom: 40px;
-    transition: 1000ms background-color ease-in, 1000ms border-radius;
+    transition:
+    1000ms background-color ease-in-out,
+    1000ms transform ease-in-out,
+    1000ms border-radius ease-in-out;
 }
 .ani-box:hover{
     background-color: yellow;
     transform: rotate(360deg);
     border-radius: 50%;
+}
+.little-text{
+    font-size: 2rem;
+}
+.ani-icon{
+    font-size: 5em;
+    animation-name: flying;
+    /* animation-delay: 250ms; */
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    transform: translateX(-100px);
+    text-align: left;
+}
+@keyframes flying{
+    from{transform: translateX(-100px);}
+    to{transform: translateX(130%);}
 }
